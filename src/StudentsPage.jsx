@@ -34,7 +34,7 @@ const StudentDashboard = () => {
   const [editModalOpen, setEditModalOpen] = useState(false);
   const [deleteModalOpen, setDeleteModalOpen] = useState(false);
   const [currentStudent, setCurrentStudent] = useState(null);
-  const [searchTerm, setSearchTerm] = useState(""); // State untuk menyimpan nilai input search
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     console.log(data);
