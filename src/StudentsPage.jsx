@@ -69,10 +69,9 @@ const StudentDashboard = () => {
   };
 
   const handleSearch = (event) => {
-    setSearchTerm(event.target.value); // Mengupdate nilai searchTerm setiap kali input berubah
+    setSearchTerm(event.target.value);
   };
 
-  // Filter data berdasarkan searchTerm
   const filteredData = data.filter((student) =>
     student.fullName.toLowerCase().includes(searchTerm.toLowerCase())
   );
